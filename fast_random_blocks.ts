@@ -9,7 +9,7 @@ class FastRandomBlocks {
     /**
      * Return the next number between 1 and 65535
      */
-    //% block="$this get next number"
+    //% block="$this next number"
     //% this.defl=rng
     //% blockId="fastrandomblocks_nextnumber"
     nextNumber() {
@@ -21,7 +21,7 @@ class FastRandomBlocks {
      * @param minimum The minimum number, ex: 1
      * @param maximum The maximum number, ex: 10
      */
-    //% block="$this get a random number between $minimum| and $maximum"
+    //% block="$this random number between $minimum and $maximum"
     //% inlineInputMode=inline
     //% this.defl=rng
     //% blockId="fastrandomblocks_randomrange"
@@ -33,7 +33,7 @@ class FastRandomBlocks {
      * Returns a boolean based on the percent passed in
      * @param percent The percentage of the time the boolean returned will be true.
      */
-    //% block="$this get a random boolean with %percent| percent chance"
+    //% block="$this $percent percent chance "
     //% this.defl=rng
     //% blockId="fastrandomblocks_percentchance"
     percentChance(percent: number) {
@@ -54,7 +54,7 @@ class FastRandomBlocks {
      * Pick a random element from the array passed in
      * @param elements The array to choose from, ex: ["apples", "oranges", "pears"]
      */
-    //% block="$this choose a random element from %elements"
+    //% block="$this pick random from $elements"
     //% elements.shadow="lists_create_with"
     //% this.defl=rng
     //% blockId="fastrandomblocks_randomelement"
@@ -65,7 +65,7 @@ class FastRandomBlocks {
     /**
      * Reset the RNG
      */
-    //% block="Reset $this"
+    //% block="reset $this"
     //% this.defl=rng
     //% blockId="fastrandomblocks_resetrng"
     resetRNG() {
